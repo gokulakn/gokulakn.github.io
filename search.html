@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="English">
+    <head>
+        <title>Google Search</title>
+        <style>
+            body {
+                font-size: 14px;
+                font-family: Arial, sans-serif;
+            }
+            #Search {
+                font-family: sans-serif;
+                font-size: 20px;
+            }
+            .top_menu {
+                align-items: center;
+                padding: 6px;
+            }
+            a:link {
+                color: black;
+                text-decoration: none;
+            }
+            a:visited {
+                color: black;
+                text-decoration: none;
+            }
+            .right_menu {
+                padding: 6px;
+            }
+           
+            .imgGoogle  {
+                top: 200px;
+            }
+
+            input[type=text] {
+                width:300px;
+                height:20px;
+                padding:10px; 
+                display: inline-block;
+                border-color: rgb(245, 243, 243);
+                border-style: solid;
+                border-radius: 25px;
+            }
+
+            input[type=text]:hover {
+               box-shadow: 1px 1px 2px 1px rgb(237, 236, 236);
+            }
+            input[type=submit]:hover {
+               box-shadow: 1px 1px 2px 1px rgb(203, 201, 201);
+            }
+            .searchButton > input {
+                background-color: rgb(245, 243, 243);
+                border: 1px rgb(245, 243, 243);
+                border-radius: 5px;
+                margin: 10px;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="top_menu">
+                <a href="https://about.google"; style="padding: 5px;margin: 5px;">About</a>
+                <a href="https://store.google.com"; style="padding: 5px;margin: 5px;">Store</a>
+            <div class="right_menu" style="float: right;">
+                <a href="https://mail.google.com"; style="padding: 5px; margin: 5px;">Gmail</a>
+                <a href="https://www.google.com/imghp">Images</a>
+            </div>
+        </div>
+        <div id="Search">
+        <center>
+            <div style="height: 150px;"></div>
+            <div class="imgGoogle"> 
+                <img alt="Paris Games Begin" src="https://www.google.com.sg/logos/doodles/2024/paris-games-begin-6753651837110444.3-law.gif">
+            </div>
+           
+            <div class="searchArea" style="width: 100%;">
+                <form action="https://google.com/search" method="GET">
+                    <input type="text" name="q">
+                    <br> 
+                    <div class="searchButton" style="padding: 20px;">
+                        <input type="submit" value="Google Search" height="40px">
+                        <input type="submit" value="I'm Feeling Lucky" height="40px">
+                    </div>
+                </form>
+            </div>
+        </center>
+        </div>
+    </body>
+</html>
